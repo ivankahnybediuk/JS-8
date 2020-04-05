@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="playList"> 
+    </div>
+    <button id="open_button" onclick="showModalWindow()">Открыть</button>
+    <div id="filter" onclick="closeModalWindow()"></div>
+    <div id="modal_window">
+        <h1>Title</h1>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus in totam vero corporis reiciendis soluta sit inventore sed, vel aliquid perspiciatis. Magni ducimus quibusdam ipsa molestias, alias tempore est voluptatem!</div>
+        <button id="close_button" onclick="closeModalWindow()">Закрыть</button>
+    </div>
+    <div class="trafficLight">
+        <div id="red_" class="red"></div>
+        <div id="yellow_" class="black"></div>
+        <div id="green_" class="black"></div>
+        <button onclick="changeColor()">Change color</button>   
+    </div>            
     <script src="script.js"></script>
-    <ol id="playList"> 
-    </ol>
 </body>
 </html>
