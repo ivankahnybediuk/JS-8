@@ -30,26 +30,35 @@ let closeModalWindow = function(state){
 };
 
 // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
+let click;
 let clearColor=function(){
     document.getElementById('red_').style.backgroundColor = "black";
     document.getElementById('yellow_').style.backgroundColor = "black";
     document.getElementById('green_').style.backgroundColor = "black";
 };
+let turnOnRed=function(){
+    clearColor();
+    document.getElementById('red_').style.backgroundColor = "red"; 
+    click='yellow'
+};
+let turnOnYellow=function(){
+    clearColor();
+    document.getElementById('yellow_').style.backgroundColor = "yellow"; 
+    click='green'  
+};
+let turnOnGreen=function(){
+    clearColor();
+    document.getElementById('green_').style.backgroundColor = "green";   
+    click='red'
+};
 let changeColor =function(){
-    for(let click = 1; click<=3; click++){
-    switch(click){
-    case 1:
-        clearColor();
-        document.getElementById('red_').style.backgroundColor = "red";
-        break;
-    case 2:
-        clearColor();
-        document.getElementById('yellow_').style.backgroundColor = "yellow";
-        break
-    case 3:
-        clearColor();
-        document.getElementById('green_').style.backgroundColor = "green";
-        break
+    if(click=='red'){
+        turnOnRed()
     }
-}
+    else if(click==undefined||click=='yellow'){
+        turnOnYellow()
+    }
+    else if (click=='green'){
+        turnOnGreen()
+    };
 }

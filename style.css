@@ -69,6 +69,7 @@ body {
 .red {
   width: 100px;
   height: 100px;
+  background-color: red;
   border-radius: 50px;
   border: 2px solid white;
   margin-left: 10px;
@@ -77,6 +78,7 @@ body {
 .yellow {
   width: 100px;
   height: 100px;
+  background-color: yellow;
   border-radius: 50px;
   border: 2px solid white;
   margin-left: 10px;
@@ -85,6 +87,7 @@ body {
 .green {
   width: 100px;
   height: 100px;
+  background-color: green;
   border-radius: 50px;
   border: 2px solid white;
   margin-left: 10px;
@@ -93,6 +96,7 @@ body {
 .black {
   width: 100px;
   height: 100px;
+  background-color: black;
   border-radius: 50px;
   border: 2px solid white;
   margin-left: 10px;
